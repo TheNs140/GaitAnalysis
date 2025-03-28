@@ -8,7 +8,7 @@ from sklearn.neighbors import KNeighborsClassifier
 
 # === Load Data ===
 joint_angles = pd.read_csv("Subject_1_Seq_1_JointAngles_N.csv")
-gait_cycle = pd.read_csv("Subject_1_Seq_1_GaitCycle_N.csv")
+# gait_cycle = pd.read_csv("Subject_1_Seq_1_GaitCycle_N.csv")
 
 # === Smooth Ankle Distance (like JRD) ===
 ankle_diff = gait_cycle.iloc[:, 0].rolling(window=5).mean()
